@@ -4,17 +4,17 @@
  PImage face;
  void setup()   
  {  
- 	size(500,500);
+ 	size(600,600);
  	 one = new Bacteria (140,140);
  	 two = new Bacteria(140,140);
- face=loadImage("face.png");
+ //face=loadImage("face.png");
 
  	 
  	  
  }   
  void draw()   
  {  
-  image(face, 10,20,width,height);
+ //image(face, 10,20,width,height);
  	 one.show();
  	 one.move();
  	 two.show();
@@ -45,8 +45,8 @@
  		};
  		if(myY > 500)
  		{
- 			myX= 200;
- 			myY=200;
+ 			myX= (int)(Math.random()* 400);
+ 			myY=0;
  		};
  		//for (int myZ =10; myZ <= 490; myZ+= 10)
  		{
