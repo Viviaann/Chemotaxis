@@ -43,7 +43,7 @@
  void draw()   
  {  
  //image(face, 10,20,width,height);\
- 	background(0);
+ 	background(250,255,255);
  	 one.show();
  	 one.move();
  	 two.show();
@@ -82,6 +82,11 @@
  	 ellipse(mouseX-5,mouseY-10, 10,10);
  	 ellipse(mouseX+10,mouseY-10, 10,10);
 
+ 	 if (mousePressed == true)
+ 	 {
+ 	 	redraw();
+ 	 }
+
  }  
  class Bacteria    
  {     
@@ -114,12 +119,14 @@
  			myY=0;
  		};
  		
- 		if (mouseX== myX)
+ 		if (mouseX== myX )
  		{
- 		myColor= 0;
- 		myColor2 =0;
- 		myColor3=0;	
+ 		myColor= 255;
+ 		myColor2 =255;
+ 		myColor3=255;	
  		};
 
+
  	}
+
  }    
