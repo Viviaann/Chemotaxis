@@ -82,11 +82,7 @@
  	 ellipse(mouseX-5,mouseY-10, 10,10);
  	 ellipse(mouseX+10,mouseY-10, 10,10);
 
- 	 if (mousePressed == true)
- 	 {
- 	 	redraw();
- 	 }
-
+ 	
  }  
  class Bacteria    
  {     
